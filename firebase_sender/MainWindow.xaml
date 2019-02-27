@@ -1,0 +1,19 @@
+﻿<Window x:Class="firebase_sender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:firebase_sender"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="FireBase Push Sender" Height="469.392" Width="458.656">
+    <Grid>
+        <Label x:Name="label" Content="By @Gray_Mind75" HorizontalAlignment="Center" Height="29" Margin="0,0,0,10" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"/>
+        <Button x:Name="addNewAppBtn" Style="{StaticResource RoundedButtonStyle}" Content="Add New App" HorizontalAlignment="Left" Margin="17,26,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="addNewAppBtn_Click" IsEnabled="False"/>
+        <Button x:Name="selectAppBtn" Style="{StaticResource RoundedButtonStyle}" Content="Select" HorizontalAlignment="Left" Margin="17,65,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="selectAppBtn_Click" IsEnabled="False"/>
+        <Button x:Name="removeAppBtn" Style="{StaticResource RoundedButtonStyle}" Content="Remove App" HorizontalAlignment="Left" Margin="17,104,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="removeAppBtn_Click" IsEnabled="False"/>
+        <ListBox x:Name="appsList" HorizontalAlignment="Left" Height="355" Margin="166,28,0,0" VerticalAlignment="Top" Width="267" HorizontalContentAlignment="Center" UseLayoutRounding="False"/>
+        <Button x:Name="SelectDataAddressBtn" Style="{StaticResource RoundedButtonStyle}" Content="Select Data Folder" HorizontalAlignment="Left" Margin="17,0,0,54" VerticalAlignment="Bottom" Width="120" Height="30" Click="SelectDataAddressBtn_Click" />
+    </Grid>
+</Window>

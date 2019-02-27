@@ -1,0 +1,19 @@
+﻿<Window x:Class="firebase_sender.Dialogs.AddNewAppDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:firebase_sender.Dialogs"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Add New App" Height="240.098" Width="378.947">
+    <Grid>
+        <TextBox x:Name="AppNameTxt" TabIndex="1" HorizontalAlignment="Center" Height="27" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="SaveBtn" Style="{StaticResource RoundedButtonStyle}" Content="Save" HorizontalAlignment="Center" Height="30" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="117" Click="SaveBtn_Click"/>
+        <Label x:Name="label" Content="Enter App Name" HorizontalAlignment="Center" Height="27" Margin="0,10,0,0" VerticalAlignment="Top" Width="124" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="FireBaseKeyTxt" TabIndex="2" HorizontalAlignment="Center" Height="27" Margin="0,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label_Copy" Content="Enter Firebase Key" HorizontalAlignment="Center" Height="27" Margin="0,87,0,0" VerticalAlignment="Top" Width="124" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>

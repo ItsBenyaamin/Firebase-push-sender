@@ -1,0 +1,39 @@
+﻿<Page x:Class="firebase_sender.frames.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:firebase_sender.frames"
+      mc:Ignorable="d" 
+      d:DesignHeight="372" d:DesignWidth="390"
+      Title="MainPage">
+
+    <Page.Resources>
+        
+    </Page.Resources>
+
+
+    <Grid>
+
+        <Grid HorizontalAlignment="Center" Width="300" Height="300" VerticalAlignment="Center">
+            <Label x:Name="label1" Content="Select Type of Json You Want to Send " HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+            
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20">
+                <Button x:Name="Sorush_type_btnd" Click="Sorush_type_btnd_Click" Style="{StaticResource RoundedButtonStyle}" Content="Sorush" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="171,150,0,0"/>
+                <Button x:Name="Twitter_type_btn" Click="Twitter_type_btn_Click" Style="{StaticResource RoundedButtonStyle}" Content="Twitter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="0,150,0,0"/>
+                <Button x:Name="instagram_type_btnd" Click="instagram_type_btnd_Click" Style="{StaticResource RoundedButtonStyle}" Content="Instagram" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="171,100,0,0"/>
+                <Button x:Name="download_hidden_type_btn" Style="{StaticResource RoundedButtonStyle}" Content="Download" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="0,100,0,0" Click="download_hidden_type_btn_Click"/>
+                <Button x:Name="view_join_type_btn" Click="view_join_type_btn_Click" Style="{StaticResource RoundedButtonStyle}" Content="ViewJoin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="171,50,0,0"/>
+                <Button x:Name="popup_type_btn" Click="popup_type_btn_Click" Style="{StaticResource RoundedButtonStyle}" Content="Popup" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="0,50,0,0"/>
+                <Button x:Name="dialog_app_type_btn" Style="{StaticResource RoundedButtonStyle}" Content="DialogApp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="171,0,0,0" Click="dialog_app_type_btn_Click"/>
+                <Button x:Name="dialog_type_btn" Style="{StaticResource RoundedButtonStyle}" Content="Dialog" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Click="dialog_type_btn_Click"/>
+                <Button x:Name="custom_json_btn_Copy" Visibility="Collapsed" Click="custom_json_btn_Copy_Click" Style="{StaticResource RoundedButtonStyle}" Content="Custom Json" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="90" Height="30" Margin="0,193,0,0"/>
+                <Button x:Name="ussd_type_btn_Copy" Click="ussd_type_btn_Copy_Click" Style="{StaticResource RoundedButtonStyle}" Content="USSD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="0,198,0,-48"/>
+            </Grid>
+            
+        </Grid>
+
+        <Label x:Name="label" Content="By @Gray_Mind75" HorizontalAlignment="Center" Height="29" Margin="0,0,0,10" HorizontalContentAlignment="Center" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Page>
